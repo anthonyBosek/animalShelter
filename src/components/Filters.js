@@ -1,6 +1,4 @@
-import React from "react";
-
-function Filters() {
+const Filters = () => {
   return (
     <div className="ui form">
       <h3>Animal type</h3>
@@ -18,6 +16,6 @@ function Filters() {
       </div>
     </div>
   );
-}
+};
 
 export default Filters;

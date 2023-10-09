@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 import Filters from "./Filters";
 import PetBrowser from "./PetBrowser";
 
-function App() {
+const App = () => {
   const [pets, setPets] = useState([]);
   const [filters, setFilters] = useState({ type: "all" });
 
@@ -24,6 +24,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;

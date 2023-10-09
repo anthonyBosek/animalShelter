@@ -1,6 +1,4 @@
-import React from "react";
-
-function Pet() {
+const Pet = () => {
   return (
     <div className="card" data-testid="pet">
       <div className="content">
@@ -22,6 +20,6 @@ function Pet() {
       </div>
     </div>
   );
-}
+};
 
 export default Pet;
