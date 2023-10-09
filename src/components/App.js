@@ -7,6 +7,10 @@ const App = () => {
   const [pets, setPets] = useState([]);
   const [filters, setFilters] = useState({ type: "all" });
 
+  const onChangeType = () => {};
+
+  const onFindPetsClick = () => {};
+
   return (
     <div className="ui container">
       <header>
@@ -15,7 +19,10 @@ const App = () => {
       <div className="ui container">
         <div className="ui grid">
           <div className="four wide column">
-            <Filters />
+            <Filters
+              onChangeType={onChangeType}
+              onFindPetsClick={onFindPetsClick}
+            />
           </div>
           <div className="twelve wide column">
             <PetBrowser />
